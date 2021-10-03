@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+                <img class="menuImg" src="images/menu.png" alt="">
+                <img class="logoImg" src="images/logo.png" alt="">
+                <ul>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Modern</a></li>
+                    <li><a href="#">Contemporary</a></li>
+                    <li><a href="#">Affordable</a></li>
+                </ul>
+                <button id="switchBtn" type="button" onclick="toggleBtn()"><span></span></button>
+            </nav>
+            <div class="lampContainer">
+                <img class="lampImg" src="images/lamp.png" alt="">
+                <img id="light" class="lightImg" src="images/light.png" alt="">
+            </div>
+            <div class="textContainer">
+                <h1>Latest <br> in Lighting</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolores illo reiciendis ullam necessitatibus deserunt voluptatibus aspernatur nisi nesciunt aliquam!</p>
+                <a href="#">Check All Collections</a>
+                <div class="control">
+                    <p>04</p>
+                    <div class="line"><span></span></div>
+                    <p>05</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        let btn = document.getElementById('switchBtn')
+        let light = document.getElementById('light')
+        function toggleBtn(){
+            btn.classList.toggle('active')
+            light.classList.toggle('on')
+        } 
+    </script>
+    
+</body>
+</html>
